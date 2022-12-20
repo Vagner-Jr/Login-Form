@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background);
+}
+
+#login {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--text-title);
+}
+
+header p {
+    color: var(--text-base);
+}
+
+#form {
+    width: 570px;
+    height: 510px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 7rem;
+    background-color: var(--form-background);
+}
+
+#form header {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--text-base);
+}
+
+form img {
+    width: 24px;
+}
+
+form .email-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid #d4ccb6;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+form .password-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #d4ccb6;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+form .password-box span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+form .check-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .email-box input, .password-box span input {
+    width: 100%;
+    background-color: var(--form-background);
+    border: none;
+    outline: none;
+}
+
+form .email-box:focus-within,
+form .password-box:focus-within {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+form .check-box input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--text-title);
+    border-radius: 4px;
+    position: relative;
+    margin-right: 5px;
+}
+
+form .check-box input:checked::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+}
+
+form .check-box img {
+    display: none;
+}
+
+.input-check-box {
+    display: flex;
+    align-items: center;
+}
+
+form p:last-child {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+b {
+    color: var(--primary-color);
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--form-background);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
